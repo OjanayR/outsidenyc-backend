@@ -20,6 +20,8 @@ async function signup(req, res) {
   }
 }
 
+console.log(400);
+
 async function login(req, res) {
   try {
     const user = await User.findOne({ email: req.body.email });
